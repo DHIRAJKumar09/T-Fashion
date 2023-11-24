@@ -1,0 +1,17 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 250px;
+    border: 2px solid black;
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition:  0.3s linear;
+}
+.footer:hover{
+    background-color: white;
+    color: black;
+    scale: 1.0;
+    font-size: 15px;
+}

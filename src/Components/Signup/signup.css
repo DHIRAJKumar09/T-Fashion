@@ -1,0 +1,41 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.signup {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .inputbox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  
+  .button {
+    background-color: rgb(17, 18, 17);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: rgb(12, 11, 11);
+    color: rgb(244, 235, 235);
+    scale: 1.2;
+  }
+  
+  /* Optional: Style for form validation error messages */
+  input:invalid {
+    border-color: #ff0000;
+  }
+  

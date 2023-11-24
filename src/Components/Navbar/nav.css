@@ -1,0 +1,74 @@
+/* Styles for the toggle icon */
+.navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
+.nav-ul{
+  display: flex;
+  justify-content: space-around;
+  list-style:none;
+  
+}
+.nav-ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s linear;
+
+}
+.nav-ul li a:hover{
+  padding: 5px;
+  border-bottom: 2px solid white;
+  border-top-right-radius: 2px solid white;
+  color: white;
+ 
+  
+
+}
+  
+
+.navbar-toggle {
+  display: block; /* Show the toggle icon only for small screens */
+  font-size: 1.5em; /* Adjust the size of the icon */
+  cursor: pointer;
+  color: white;
+}
+
+/* Media query to hide the toggle icon on larger screens */
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+  .nav-ul.show{
+    display: flex;
+  }
+}
+@media (min-width:600px){
+  .navbar-toggle{
+    display: none;
+  }
+}
+@media (max-width : 600px){
+  .nav-ul {
+    display: block;
+  }
+  .nav-ul li:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;
+    color: black;
+    background-color:grey;
+  }
+  .nav-ul li a:hover{
+    color: black;
+    padding: 5px;
+  }
+  .nav-ul.show{
+    display: none;
+  }
+}
