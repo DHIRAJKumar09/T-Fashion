@@ -71,4 +71,19 @@
   .nav-ul.show{
     display: none;
   }
+  .logo{
+    height: 30px;
+    position:absolute;
+    margin-left: 50%;
+    margin-top: -7px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    
+  }
+}
+.logo{
+  border-radius: 50%;
+  width: 45px;
+ 
+ 
+
 }

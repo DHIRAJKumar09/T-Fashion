@@ -17,23 +17,37 @@ export const Nav = () => {
     navU1.classList.toggle('show');
   };
   return (
-    <nav class="navbar">
-  <div class="navbar-toggle" onClick={toggleMenu}>
-    <FaBars/>
-  </div>
-  <ul class="nav-ul">
-    <li><a href="/">Products</a></li>
-    <li><a href="/add">Add Products</a></li>
-    <li><a href="/update">Update Products</a></li>
-    <li><a href="/profile">Profile</a></li>
-
-   <li>{ auth ? <Link onClick={logout} to="/signup" >Logout</Link> : 
+    <div class="navbar">
    
-   <Link to="/signup">Signup</Link>}
-   </li>
+        <div class="navbar-toggle" onClick={toggleMenu}>
+           <FaBars/>
 
-  </ul>
-</nav>
+         </div>
+         <img alt='logo' 
+          className='logo'
+           src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO5sckwoTmUhhIH4x40ZJS3UaUyf0Ij2p7YjautFlV&s'
+           ></img>
+      
+        
+
+  { auth ?
+    <ul class="nav-ul">
+    
+ 
+
+         <li><a href="/">Products</a></li>
+         <li><a href="/add">Add Products</a></li>
+         <li><a href="/update">Update Products</a></li>
+         <li><a href="/profile">Profile</a></li>
+         <li><Link onClick={logout} to="/signup" >Logout : {JSON.parse(auth).name}</Link></li> 
+    </ul>
+    :
+   <ul className='nav-ul'>
+      <li> <Link to="/signup">Signup</Link></li>
+      <li><Link to="/login">Login</Link></li>
+    </ul>
+   } 
+</div>
 
   )
 }
